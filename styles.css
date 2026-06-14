@@ -1,0 +1,330 @@
+/* --- High-End Typography Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;400&display=swap');
+
+:root {
+    /* Precise Material Design System Variables */
+    --bg-base: #f4eae1;
+    --card-surface: #fbf6f0;
+    
+    /* Soft Visual Custom Gradients */
+    --mint-layer: #cee6df;
+    --mint-text: #2d554a;
+    
+    --periwinkle-layer: #becdf4;
+    --periwinkle-text: #2b3e6b;
+    
+    --peach-layer: #f5dfca;
+    --peach-text: #6e4620;
+    
+    --lavender-layer: #d6cee6;
+    --lavender-text: #4a3c63;
+    
+    --text-main: #3a3530;
+    --text-muted: #8c8277;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-base);
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* --- Natural Depth Ambient Lighting Layer --- */
+.studio-ambient-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 10% 20%, rgba(253, 251, 247, 0.8) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(240, 222, 206, 0.6) 0%, transparent 60%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.sanctuary-ui {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Clean Branding Layout --- */
+.app-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.app-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 200;
+    letter-spacing: 9px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+.app-logo span {
+    font-weight: 400;
+    color: var(--text-main);
+}
+
+.app-header h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #2b2724;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+/* --- Custom Geometric Symbol Engine --- */
+.turning-point-symbol {
+    --symbol-size: 44px;
+    width: var(--symbol-size);
+    height: var(--symbol-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.symbol-core {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slowSpindle 20s infinite linear;
+}
+
+.axis {
+    position: absolute;
+    background: linear-gradient(to right, transparent, var(--text-main) 50%, transparent);
+    opacity: 0.25;
+}
+.axis.vertical {
+    width: 1px;
+    height: 130%;
+    background: linear-gradient(to bottom, transparent, var(--text-main) 50%, transparent);
+}
+.axis.horizontal {
+    width: 130%;
+    height: 1px;
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--text-muted);
+    opacity: 0.2;
+}
+.ring.outer { width: 100%; height: 100%; border-style: dashed; }
+.ring.inner { width: 60%; height: 60%; }
+
+.pivot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-main);
+    transform: rotate(45deg);
+    position: absolute;
+    box-shadow: 0 0 10px rgba(190, 205, 244, 0.8);
+    z-index: 2;
+}
+
+@keyframes slowSpindle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- 3D Fluid Components Layout Engine --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.emotion-card {
+    height: 390px;
+    perspective: 1400px; /* Activates spatial 3D horizon rendering */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.emotion-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 28px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--card-surface);
+}
+
+.card-front {
+    box-shadow: 0 20px 45px rgba(58, 53, 48, 0.03), 
+                inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    box-shadow: 0 20px 45px rgba(58, 53, 48, 0.03);
+}
+
+/* Back Facing Color Alignments */
+.card-mint .card-back { background-color: #f2faf7; border-color: var(--mint-layer); }
+.card-periwinkle .card-back { background-color: #f4f7fe; border-color: var(--periwinkle-layer); }
+.card-peach .card-back { background-color: #fffbf7; border-color: var(--peach-layer); }
+.card-lavender .card-back { background-color: #faf8fc; border-color: var(--lavender-layer); }
+
+/* --- Scripture Text Typography --- */
+.scripture-container {
+    text-align: center;
+}
+
+.verse {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.reference {
+    display: block;
+    margin-top: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* --- Card Front Visual Elements --- */
+.card-visual {
+    width: 100%;
+    height: 210px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.natural-shadow-shifter {
+    position: absolute;
+    bottom: -45px; left: -10%; width: 120%; height: 110px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    filter: blur(4px);
+    z-index: 1;
+}
+
+/* Dynamic Gradient Injection Map */
+.card-mint .card-visual { background: linear-gradient(180deg, #f2f8f6 0%, var(--mint-layer) 100%); color: var(--mint-text); }
+.card-periwinkle .card-visual { background: linear-gradient(180deg, #f4f7fe 0%, var(--periwinkle-layer) 100%); color: var(--periwinkle-text); }
+.card-peach .card-visual { background: linear-gradient(180deg, #fdfaf7 0%, var(--peach-layer) 100%); color: var(--peach-text); }
+.card-lavender .card-visual { background: linear-gradient(180deg, #f7f5fa 0%, var(--lavender-layer) 100%); color: var(--lavender-text); }
+
+.icon {
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    opacity: 0.85;
+}
+
+/* Highlight Framework Mapping for Card 2 */
+.active-glow .card-front {
+    box-shadow: 0 0 0 3px #ffffff, 0 25px 55px rgba(190, 205, 244, 0.45);
+}
+
+.card-content {
+    padding: 22px 10px 10px 10px;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--text-main);
+    letter-spacing: -0.1px;
+}
+
+.status-line {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+    padding-bottom: 8px;
+}
+
+/* Micro Physics Engine for Floating Assets */
+.animate-float {
+    animation: slowFloat 4s ease-in-out infinite alternate;
+}
+
+@keyframes slowFloat {
+    0% { transform: translateY(2px); }
+    100% { transform: translateY(-6px); }
+}
+
+/* --- Fluid Screen Breakpoints --- */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .emotion-card { height: 370px; }
+    .main-container { padding: 40px 20px; }
+}
+
+@media (max-width: 630px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .app-header h1 { font-size: 2.2rem; }
+}
