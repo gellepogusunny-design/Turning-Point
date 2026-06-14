@@ -1,5 +1,4 @@
-Here is a comprehensive theory and technical breakdown of the **Turning Point** project. You can use this guide as a presentation script, a project documentation file, or a talking-point guide when presenting to your trainer.
-
+[Live link](https://ourturningpoint.bytexl.live/)
 ---
 
 ## Project Overview: "Turning Point"
