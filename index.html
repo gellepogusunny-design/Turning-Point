@@ -1,141 +1,1046 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turning Point — Sanctuary for the Soul</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Turning Point | Sanctuary for the Soul
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
+
+    <!-- Ambient Background -->
 
     <div class="studio-ambient-bg"></div>
 
-    <div class="main-container">
+    <!-- Navigation -->
+
+    <nav class="app-navigation">
+
+        <div class="nav-container">
+
+            <div class="nav-brand">
+
+                TURNING
+                <span>POINT</span>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" class="active">
+                        HOME
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#overview">
+                        OVERVIEW
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cards">
+                        EMOTIONS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#reviews">
+                        REVIEWS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#profile">
+                        CREATOR
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        CONTACT
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- Main Container -->
+
+    <div class="main-container" id="home">
+
         <div class="sanctuary-ui">
-            
+
+            <!-- Header -->
+
             <header class="app-header">
+
                 <div class="brand-wrapper">
-                    <div class="turning-point-symbol" aria-label="Turning Point Emblem">
+
+                    <!-- Turning Point Symbol -->
+
+                    <div class="turning-point-symbol">
+
                         <div class="symbol-core">
+
                             <div class="axis vertical"></div>
+
                             <div class="axis horizontal"></div>
+
                             <div class="ring outer"></div>
+
                             <div class="ring inner"></div>
+
                             <div class="pivot"></div>
+
                         </div>
+
                     </div>
-                    <div class="app-logo">TURNING <span>POINT</span></div>
+
+                    <div class="app-logo">
+
+                        TURNING
+                        <span>POINT</span>
+
+                    </div>
+
                 </div>
-                <h1>Sanctuary for the Soul</h1>
+
+                <h1>
+                    Sanctuary for the Soul
+                </h1>
+
+                <p class="hero-subtitle">
+
+                    A peaceful place where emotions meet
+                    faith, healing meets hope, and every
+                    heart discovers God's promises.
+
+                </p>
+
             </header>
 
-            <main class="cards-grid">
+            <!-- Hero Banner -->
 
-                <div class="emotion-card card-mint">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-visual">
-                                <div class="natural-shadow-shifter"></div>
-                                <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25,75 C30,55 45,35 75,25 C65,45 55,60 25,75 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M25,75 C40,60 55,45 75,25" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h2>Anxiety &<br>Fear</h2>
-                            </div>
-                            <div class="status-line">Breathe. Find Calm.</div>
-                        </div>
-                        <div class="card-back">
-                            <div class="scripture-container">
-                                <p class="verse">"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts."</p>
-                                <span class="reference">Philippians 4:6-7</span>
-                            </div>
-                        </div>
-                    </div>
+            <section class="hero-section">
+
+                <div class="hero-card">
+
+                    <h2>
+                        Emotional Healing Through
+                        God's Word
+                    </h2>
+
+                    <p>
+
+                        Explore carefully selected Bible
+                        verses designed to bring peace,
+                        comfort, strength, encouragement,
+                        hope, and spiritual renewal.
+
+                    </p>
+
+                    <a href="#cards" class="hero-btn">
+
+                        Explore Emotions
+
+                    </a>
+
                 </div>
 
-                <div class="emotion-card card-periwinkle active-glow">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-visual">
-                                <div class="natural-shadow-shifter"></div>
-                                <svg class="icon animate-float" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <radialGradient id="drop-grad" cx="35%" cy="35%" r="65%">
-                                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
-                                            <stop offset="40%" stop-color="#f0f4ff" stop-opacity="0.6"/>
-                                            <stop offset="100%" stop-color="#b1c5f6" stop-opacity="0.2"/>
-                                        </radialGradient>
-                                    </defs>
-                                    <path d="M50,20 C50,20 20,55 20,70 A30,30 0 0,0 80,70 C80,55 50,20 50,20 Z" fill="url(#drop-grad)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h2>Grief &<br>Heartbreak</h2>
-                            </div>
-                            <div class="status-line">Comfort. Gentle Healing.</div>
-                        </div>
-                        <div class="card-back">
-                            <div class="scripture-container">
-                                <p class="verse">"The Lord is close to the brokenhearted and saves those who are crushed in spirit. He heals the brokenhearted and binds up their wounds."</p>
-                                <span class="reference">Psalm 34:18 / 147:3</span>
-                            </div>
-                        </div>
-                    </div>
+            </section>
+
+            <!-- Project Overview -->
+
+            <section
+                id="overview"
+                class="project-overview">
+
+                <div class="overview-container">
+
+                    <h2>
+                        Project Overview
+                    </h2>
+
+                    <p>
+
+                        Turning Point is a spiritual and
+                        emotional wellness platform
+                        designed to help individuals find
+                        encouragement through Scripture.
+
+                    </p>
+
+                    <p>
+
+                        Every emotion card contains a
+                        carefully selected Bible verse
+                        that addresses specific emotional
+                        challenges such as anxiety,
+                        loneliness, grief, stress,
+                        depression, fear, uncertainty,
+                        guilt, and hopelessness.
+
+                    </p>
+
+                    <p>
+
+                        The purpose of this project is to
+                        create a digital sanctuary where
+                        users can experience comfort,
+                        peace, and emotional healing
+                        through God's Word.
+
+                    </p>
+
                 </div>
 
-                <div class="emotion-card card-peach">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-visual">
-                                <div class="natural-shadow-shifter"></div>
-                                <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25,55 Q40,45 50,60 T75,55" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M28,62 Q41,54 50,68 T72,62" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h2>Loneliness</h2>
-                            </div>
-                            <div class="status-line">Belonging. Never Alone.</div>
-                        </div>
-                        <div class="card-back">
-                            <div class="scripture-container">
-                                <p class="verse">"No one will be able to stand against you all the days of your life. As I was with Moses, so I will be with you; I will never leave you nor forsake you."</p>
-                                <span class="reference">Joshua 1:5</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </section>
 
-                <div class="emotion-card card-lavender">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <div class="card-visual">
-                                <div class="natural-shadow-shifter"></div>
-                                <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20,65 Q35,50 50,65 T80,65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <circle cx="50" cy="35" r="5" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h2>Weariness &<br>Exhaustion</h2>
-                            </div>
-                            <div class="status-line">Rest. Renewed Strength.</div>
-                        </div>
-                        <div class="card-back">
-                            <div class="scripture-container">
-                                <p class="verse">"Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls."</p>
-                                <span class="reference">Matthew 11:28-29</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Emotion Cards Section -->
 
-            </main>
+            <section
+                id="cards"
+                class="cards-section">
+
+                <h2 class="section-title">
+
+                    Emotional Healing Cards
+
+                </h2>
+
+                <div class="cards-grid">
+
+                    <!-- Cards Start In PART 2 -->
+                     <!-- CARD 1 -->
+
+<div class="emotion-card card-mint">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🌿
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Anxiety & Fear
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Breathe. Find Calm.
+
+            </div>
+
         </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Do not be anxious about anything,
+                    but in every situation, by prayer
+                    and petition, with thanksgiving,
+                    present your requests to God."
+
+                </p>
+
+                <span class="reference">
+
+                    Philippians 4:6-7
+
+                </span>
+
+            </div>
+
+        </div>
+
     </div>
 
+</div>
+
+<!-- CARD 2 -->
+
+<div class="emotion-card card-periwinkle">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                💧
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Grief &
+                    Heartbreak
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Comfort. Healing.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "The Lord is close to the
+                    brokenhearted and saves those
+                    who are crushed in spirit."
+
+                </p>
+
+                <span class="reference">
+
+                    Psalm 34:18
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="emotion-card card-peach">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🤝
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Loneliness
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Never Alone.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "I will never leave you
+                    nor forsake you."
+
+                </p>
+
+                <span class="reference">
+
+                    Joshua 1:5
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="emotion-card card-lavender">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🌙
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Weariness &
+                    Exhaustion
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Rest. Renew.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Come to me, all who are weary
+                    and burdened, and I will give
+                    you rest."
+
+                </p>
+
+                <span class="reference">
+
+                    Matthew 11:28
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="emotion-card card-sage">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🧭
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Doubt &
+                    Uncertainty
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Walk By Faith.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Trust in the Lord with all
+                    your heart and lean not on
+                    your own understanding."
+
+                </p>
+
+                <span class="reference">
+
+                    Proverbs 3:5-6
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="emotion-card card-rose">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                ❤️
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Anger &
+                    Bitterness
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Forgive & Heal.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Get rid of all bitterness,
+                    rage and anger. Be kind and
+                    compassionate to one another."
+
+                </p>
+
+                <span class="reference">
+
+                    Ephesians 4:31-32
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div><!-- CARD 7 -->
+
+<div class="emotion-card card-amber">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                ⭐
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Identity &
+                    Purpose
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Hope & Future.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "For I know the plans I have
+                    for you, declares the Lord,
+                    plans to prosper you and not
+                    to harm you."
+
+                </p>
+
+                <span class="reference">
+
+                    Jeremiah 29:11
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 8 -->
+
+<div class="emotion-card card-clay">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🕊️
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Shame &
+                    Guilt
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Grace & Mercy.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "If we confess our sins,
+                    He is faithful and just
+                    and will forgive us."
+
+                </p>
+
+                <span class="reference">
+
+                    1 John 1:9
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 9 -->
+
+<div class="emotion-card card-periwinkle">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                ☀️
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Depression
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Light In Darkness.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "The Lord is my light
+                    and my salvation—
+                    whom shall I fear?"
+
+                </p>
+
+                <span class="reference">
+
+                    Psalm 27:1
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 10 -->
+
+<div class="emotion-card card-mint">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                ✨
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Joy &
+                    Gratitude
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Rejoice Always.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Rejoice in the Lord always.
+                    I will say it again:
+                    Rejoice!"
+
+                </p>
+
+                <span class="reference">
+
+                    Philippians 4:4
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 11 -->
+
+<div class="emotion-card card-sky">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🌊
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Stress &
+                    Pressure
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Peace Over Panic.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Cast all your anxiety
+                    on Him because He cares
+                    for you."
+
+                </p>
+
+                <span class="reference">
+
+                    1 Peter 5:7
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CARD 12 -->
+
+<div class="emotion-card card-gold">
+
+    <div class="card-inner">
+
+        <div class="card-front">
+
+            <div class="card-visual">
+                🙏
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Hope &
+                    Faith
+                </h2>
+
+            </div>
+
+            <div class="status-line">
+
+                Trust God's Plan.
+
+            </div>
+
+        </div>
+
+        <div class="card-back">
+
+            <div class="scripture-container">
+
+                <p class="verse">
+
+                    "Now faith is confidence
+                    in what we hope for and
+                    assurance about what we
+                    do not see."
+
+                </p>
+
+                <span class="reference">
+
+                    Hebrews 11:1
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- END OF CARDS GRID -->
+
+</div>
+
+</section><!-- REVIEWS SECTION -->
+
+<section
+    id="reviews" class="reviews-section">
+
+    <h2 class="section-title">
+        User Reviews
+    </h2>
+
+    <div class="review-form">
+
+        <input
+            type="text"
+            id="userName"
+            placeholder="Enter Your Name">
+
+        <textarea
+            id="userReview"
+            placeholder="Write Your Review"></textarea>
+
+        <button onclick="addReview()">
+            Submit Review
+        </button>
+
+    </div>
+
+    <div id="reviewsContainer" class="reviews-grid">
+
+    </div>
+
+</section>
+
+<!-- CREATOR PROFILE -->
+
+<section
+    id="profile"
+    class="authorizer-profile">
+
+    <div class="profile-frame">
+
+        <img
+            src="rajesh.jpg"
+            alt="G Rajesh"
+            class="profile-image">
+
+        <div class="profile-ring"></div>
+
+    </div>
+
+    <div class="profile-details">
+
+        <span class="profile-role">
+
+            Creator & Developer
+
+        </span>
+
+        <h2 class="profile-name">
+
+            G. RAJESH
+
+        </h2>
+
+        <p class="profile-bio">
+
+            Passionate Web Developer and
+            creator of Turning Point —
+            a digital sanctuary designed
+            to provide emotional healing,
+            encouragement, and spiritual
+            growth through God's Word.
+
+        </p>
+
+        <p class="profile-bio">
+
+            This project was created to help
+            people discover peace, hope,
+            comfort, and strength through
+            carefully selected Bible verses.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section
+    id="contact"
+    class="contact-section">
+
+    <h2 class="section-title">
+
+        Contact Information
+
+    </h2>
+
+    <div class="meta-contact-grid">
+
+        <a
+            href="tel:8008721173"
+            class="contact-pill">
+
+            📞 8008721173
+
+        </a>
+
+        <a
+            href="mailto:gellepogusunny@gmail.com"
+            class="contact-pill">
+
+            📧 gellepogusunny@gmail.com
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="copyright-bar">
+
+    <div class="footer-divider"></div>
+
+    <p>
+
+        © 2026 Turning Point |
+        Sanctuary for the Soul
+
+    </p>
+
+    <p>
+
+        Designed & Developed by
+        <strong>G. RAJESH</strong>
+
+    </p>
+
+</footer>
+
+</div>
+
+</div>
+
 </body>
+
 </html>
