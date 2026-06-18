@@ -1,4 +1,4 @@
-[Live link](https://ourturningpoint.bytexl.live/)
+[Live link](https://turningpoint.bytexl.live/)
 ---
 
 ## Project Overview: "Turning Point"
